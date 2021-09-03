@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginBottom="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:text="分类名称 "/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/gray_vlue"/>
+
+</LinearLayout>

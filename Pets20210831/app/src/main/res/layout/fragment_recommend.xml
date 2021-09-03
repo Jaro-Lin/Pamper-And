@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_index_bg"
+    tools:context=".fragment.RecommendFragment">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginTop="@dimen/_10px"
+        android:layout_marginBottom="@dimen/_10px"
+        android:text="热闹话题"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_popular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200px"/>
+        <TextView
+            android:id="@+id/tv_more_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/_50px"
+            android:layout_marginBottom="@dimen/_20px"
+            android:text="查看更多..."/>
+    </LinearLayout>
+    <com.nyw.pets.refresh.MeiTuanRefreshView
+        android:id="@+id/refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_data"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20px"
+        android:layout_height="match_parent" />
+
+
+    </com.nyw.pets.refresh.MeiTuanRefreshView>
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text=""/>
+
+
+</LinearLayout>

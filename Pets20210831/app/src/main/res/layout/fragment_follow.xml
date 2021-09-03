@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_index_bg"
+    tools:context=".fragment.FollowFragment">
+<!--    没有关注的用户显示界面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_150px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/no_data_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="你还没有添加任何关注用户，请先添加关注" />
+
+    </LinearLayout>
+
+<!--    已经有关注的用户显示界面-->
+
+    <com.nyw.pets.refresh.MeiTuanRefreshView
+        android:id="@+id/refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_data"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20px"
+        android:layout_height="match_parent"/>
+    </com.nyw.pets.refresh.MeiTuanRefreshView>
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text=""/>
+
+
+</LinearLayout>

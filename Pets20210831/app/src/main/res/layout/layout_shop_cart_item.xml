@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_index_data_gb"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:layout_marginTop="@dimen/_20px"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_shop_cart_selector"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"/>
+        <ImageView
+            android:id="@+id/iv_shopImg"
+            android:layout_width="@dimen/_160px"
+            android:layout_height="@dimen/_160px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/http_error"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="狗狗食物超级好吃的零食营养的食物优惠"/>
+            <TextView
+                android:id="@+id/tv_specifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10px"
+                android:text="规格:1000 g"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:text="￥ 19.9"/>
+            <ImageView
+                android:id="@+id/iv_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20px"
+                android:src="@mipmap/reduce_img"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20px"
+                android:background="#DDDDDD">
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_20px"
+                    android:layout_marginRight="@dimen/_20px"
+                    android:text="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20px"
+                android:src="@mipmap/increase_img"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

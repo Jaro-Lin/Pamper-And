@@ -1,0 +1,31 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <!--APP主题-->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--&lt;!&ndash;状态栏颜色&ndash;&gt;-->
+        <!--<item name="android:colorPrimaryDark">@color/main_color</item>-->
+        <!-- 使底部导航栏透明 -->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--&lt;!&ndash; 给status栏设置透明颜色 &ndash;&gt;-->
+        <!--<item name="android:statusBarColor">@color/main_color</item>-->
+    </style>
+    <!--// values-v21。5.0 以上提供了 setStatusBarColor()  方法设置状态栏颜色。-->
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- 图片全屏-->    <style name="Theme.imgFullScreen" parent="Theme.AppCompat.Light.NoActionBar">        <!-- Customize your theme here. -->        <item name="android:windowTranslucentStatus">false</item>        <item name="android:windowTranslucentNavigation">true</item>        <item name="android:statusBarColor">@color/transparent</item>        <!--底部黑色，状态栏透明-->    </style>
+
+</resources>

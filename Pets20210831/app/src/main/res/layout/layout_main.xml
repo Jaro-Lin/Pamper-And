@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/write">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" >
+        </FrameLayout>
+
+        <!-- 隐藏TabWidget -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <!-- 视觉上,用单选按钮替代TabWidget -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_bg" />
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/write"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tab_map"
+                style="@style/main_tab_item"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_index"
+                android:duplicateParentState="true"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/tab_destination"
+                style="@style/main_tab_item"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/tab_quick"
+                android:text="记录" />
+
+            <RadioButton
+                android:id="@+id/tab_Realtime_line"
+                style="@style/main_tab_item"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/tab_program"
+                android:text="课程" />
+            <RadioButton
+                android:id="@+id/tab_Realtime_shop"
+                style="@style/main_tab_item"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/tab_program"
+                android:visibility="gone"
+                android:text="商城" />
+
+            <RadioButton
+                android:id="@+id/tab_Personal_center"
+                style="@style/main_tab_item"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/tab_setting"
+                android:tag="@style/main_tab_item"
+                android:text="我的" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

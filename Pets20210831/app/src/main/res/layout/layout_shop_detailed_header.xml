@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.zhouwei.mzbanner.MZBannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_600px"
+        app:canLoop="true"
+        app:indicatorAlign="center"
+        app:middle_page_cover="false"
+        app:open_mz_mode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/_10px"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:text="￥9.9"/>
+        <TextView
+            android:id="@+id/tv_pay_money_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_10px"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_marginRight="@dimen/_30px"
+            android:text="1992人付款"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:lineSpacingExtra="@dimen/_5px"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:text="狗狗食物超级好吃的零食营养的食物优惠营养的食物优惠营养的食物优惠"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:background="@color/write">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:lineSpacingExtra="@dimen/_5px"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:text="请选择:"/>
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:lineSpacingExtra="@dimen/_5px"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:text="1000kg"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:src="@mipmap/next_read_data_img"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:orientation="vertical"
+        android:background="@color/write">
+
+        <LinearLayout
+            android:id="@+id/llt_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_30px"
+                android:layout_marginTop="@dimen/_30px"
+                android:lineSpacingExtra="@dimen/_5px"
+                android:layout_marginRight="@dimen/_30px"
+                android:layout_marginLeft="@dimen/_30px"
+                android:text="商品评论"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_30px"
+                android:layout_marginTop="@dimen/_30px"
+                android:lineSpacingExtra="@dimen/_5px"
+                android:layout_marginRight="@dimen/_30px"
+                android:layout_marginLeft="@dimen/_30px"
+                android:text="查看全部"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_30px"
+                android:layout_marginLeft="@dimen/_30px"
+                android:src="@mipmap/next_read_data_img"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.nyw.pets.view.RoundImageView
+                android:id="@+id/rv_user_img"
+                android:layout_width="@dimen/_80px"
+                android:layout_height="@dimen/_80px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30px"
+                android:src="@mipmap/ic_logo"/>
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_20px"
+                android:layout_gravity="center_vertical"
+                android:text="张三"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_evaluationMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:text="收到之后就迫不及待的打开了，喂给我们家的哈哈，狗狗吃得很开心，下次还会回购的"
+            android:textColor="@color/black"/>
+
+        <cn.edu.heuet.littlecurl.ninegridview.preview.NineGridViewGroup
+            android:id="@+id/nineGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_noComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="暂时无评论"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_20px"
+        android:layout_marginTop="@dimen/_20px"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10px"
+        android:background="@color/write"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="商品详情介绍"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20px"
+        android:layout_marginTop="@dimen/_20px"
+        android:textSize="16sp"/>
+
+
+
+</LinearLayout>

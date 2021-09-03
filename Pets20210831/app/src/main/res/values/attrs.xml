@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+        <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    <declare-styleable name="XNumberKeyboardView">
+
+        <!-- 删除按键的图标 -->
+        <attr name="xnkv_deleteDrawable" format="reference" />
+
+        <!-- 删除按键图标的宽度 -->
+        <attr name="xnkv_deleteWidth" format="dimension|reference" />
+
+        <!-- 删除按键图标的高度 -->
+        <attr name="xnkv_deleteHeight" format="dimension|reference" />
+
+        <!-- 删除按键图标的颜色 -->
+        <attr name="xnkv_deleteBackgroundColor" format="color|reference" />
+
+    </declare-styleable>
+    <declare-styleable name="PasswordEditText">
+        <!-- 密码的个数 -->
+        <attr name="passwordNumber" format="integer"/>
+        <!-- 密码圆点的半径 -->
+        <attr name="passwordRadius" format="dimension" />
+        <!-- 密码圆点的颜色 -->
+        <attr name="passwordColor" format="color" />
+        <!-- 分割线的颜色 -->
+        <attr name="divisionLineColor" format="color" />
+        <!-- 分割线的大小 -->
+        <attr name="divisionLineSize" format="color" />
+        <!-- 背景边框的颜色 -->
+        <attr name="bgColor" format="color" />
+        <!-- 背景边框的大小 -->
+        <attr name="bgSize" format="dimension" />
+        <!-- 背景边框的圆角大小 -->
+        <attr name="bgCorner" format="dimension"/>
+    </declare-styleable>
+    <!-- 波纹进度条 -->
+    <declare-styleable name="WaveProgressView">
+        <attr name="progress_max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="speed" format="float" />
+        <attr name="wave_width" format="float" />
+        <attr name="wave_height" format="float" />
+        <attr name="wave_color" format="color" />
+        <attr name="wave_bg_color" format="color" />
+        <attr name="stroke_color" format="color" />
+        <attr name="main_text" format="string" />
+        <attr name="main_text_color" format="color" />
+        <attr name="main_text_size" format="dimension" />
+        <attr name="hint_text" format="string" />
+        <attr name="hint_color" format="color" />
+        <attr name="hint_size" format="dimension" />
+        <attr name="text_space" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+
+    <string-array name="contacts">
+        <item>毛泽东</item>
+        <item>周恩来</item>
+        <item>孙中山</item>
+        <item>刘少奇</item>
+        <item>邓小平</item>
+        <item>宋庆龄</item>
+        <item>邓稼先</item>
+        <item>陈景润</item>
+        <item>黄子卿</item>
+        <item>李四光</item>
+        <item>马大猷</item>
+        <item>茅以升</item>
+        <item>钱学森</item>
+        <item>卢永根</item>
+        <item>华罗庚</item>
+        <item>郭沫若</item>
+        <item>鲁迅</item>
+        <item>李大钊</item>
+        <item>彭德怀</item>
+        <item>朱德</item>
+        <item>恽代英</item>
+        <item>瞿秋白</item>
+        <item>江泽民</item>
+        <item>张太雷</item>
+        <item>秋瑾</item>
+        <item>袁隆平</item>
+        <item>李小龙</item>
+        <item>成龙</item>
+        <item>李连杰</item>
+        <item>刘德华</item>
+        <item>周杰伦</item>
+        <item>张学友</item>
+        <item>姚明</item>
+        <item>刘翔</item>
+        <item>李嘉诚</item>
+        <item>何鸿燊</item>
+        <item>于丹</item>
+        <item>李政道</item>
+        <item>杨振宁</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_index_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/my_index_bg"
+        android:orientation="horizontal">
+
+        <com.nyw.pets.view.RoundImageView
+            android:id="@+id/riv_name_img"
+            android:layout_width="@dimen/_100px"
+            android:layout_height="@dimen/_100px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_logo"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20px"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="这是标题呢称"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2020-06-11 20:20:36"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/_10px"
+                android:lineSpacingExtra="@dimen/_5px" />
+            <LinearLayout
+                android:id="@+id/llt_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="回复"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_10px"
+                    android:lineSpacingExtra="@dimen/_5px" />
+                <TextView
+                    android:id="@+id/tv_commentUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="要回复的用户名"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/_5px"
+                    android:textColor="#23A0F0"
+                    android:layout_marginTop="@dimen/_10px"
+                    android:lineSpacingExtra="@dimen/_5px" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这是内容"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10px"
+                android:layout_marginTop="@dimen/_10px"
+                android:lineSpacingExtra="@dimen/_5px" />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_delComment"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_marginRight="@dimen/_60px"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_150px"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30px"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_add_Reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/_80px"
+            android:text="回复"/>
+
+        <ImageView
+            android:id="@+id/iv_thumbs"
+            android:layout_width="@dimen/_36px"
+            android:layout_height="@dimen/_36px"
+            android:layout_marginRight="@dimen/_10px"
+            android:layout_marginLeft="@dimen/_60px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/no_thumbs_my_img"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:layout_marginRight="@dimen/_30px"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="2266"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_2px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_150px"
+        android:layout_marginRight="@dimen/_30px"
+        android:background="@color/gray_vlue"/>
+
+
+</LinearLayout>

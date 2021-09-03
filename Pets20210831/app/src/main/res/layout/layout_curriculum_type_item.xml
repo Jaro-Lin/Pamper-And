@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/write"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_msg_type"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60px"
+        android:textColor="@color/write"
+        android:textSize="14sp"
+        android:background="@drawable/get_curriculum_btn_gb"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginTop="@dimen/_20px"
+        android:text="类型选择"/>
+
+</LinearLayout>

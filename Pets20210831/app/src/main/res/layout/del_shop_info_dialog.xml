@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_500px"
+    android:layout_height="@dimen/_330px"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/persons_material_gb"
+    android:orientation="vertical">
+
+    <!-- 这里如果使用android:layout_width="5000dip"设置一个极大的值 系统就会 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="提示"
+        android:layout_marginTop="@dimen/_20px"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_updata_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_20px"
+        android:layout_marginRight="@dimen/_20px"
+        android:layout_marginTop="@dimen/_50px"
+        android:layout_marginBottom="@dimen/_20px"
+        android:text="是否删除选中商品？" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_75px"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btn_update"
+            android:background="#BBBBBB"
+            android:text="返回"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/write" />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_75px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@color/red"
+            android:text="确定"
+            android:textColor="@color/write" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

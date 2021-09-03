@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_700px"
+    android:layout_height="@dimen/_430px"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/persons_material_gb"
+    android:orientation="vertical">
+
+    <!-- 这里如果使用android:layout_width="5000dip"设置一个极大的值 系统就会 -->
+    <LinearLayout
+        android:id="@+id/llt_pay_treasure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:src="@mipmap/pay_treasure_img"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"/>
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30px"
+            android:drawableLeft="@drawable/checkbox_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:src="@mipmap/weixin_pay_img"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_marginTop="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginLeft="@dimen/_30px"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"/>
+        <CheckBox
+            android:id="@+id/cb_selectweixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_30px"
+            android:drawableLeft="@drawable/checkbox_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/_250px"
+            android:layout_height="@dimen/_70px"
+            android:layout_marginTop="@dimen/_50px"
+            android:layout_marginRight="@dimen/_60px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:background="@drawable/add_shop_buy_btn_gb"
+            android:text="确定支付"
+            android:textColor="@color/write" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

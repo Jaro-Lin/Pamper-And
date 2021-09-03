@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/shop_type_pets_img"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/layout_dog"
+        style="@style/fill_width"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_10px"
+        android:background="@drawable/menu_left_item_selector"
+        android:padding="@dimen/_10px">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_14px"
+            android:layout_width="@dimen/_25px"
+            android:layout_height="@dimen/_25px"
+            android:scaleType="fitCenter"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/donghead" />
+
+        <TextView
+            style="@style/wrap"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_28px"
+            android:layout_marginLeft="@dimen/_10px"
+            android:text="狗" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/layout_cat"
+        style="@style/fill_width"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_10px"
+        android:background="@drawable/menu_left_item_selector"
+        android:padding="@dimen/_10px">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_14px"
+            android:layout_width="@dimen/_25px"
+            android:layout_height="@dimen/_25px"
+            android:scaleType="fitCenter"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/cathead" />
+
+        <TextView
+            style="@style/wrap"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_28px"
+            android:layout_marginLeft="@dimen/_10px"
+            android:text="猫" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:visibility="gone"
+        android:background="@color/write"/>
+
+    <LinearLayout
+        android:id="@+id/layout_Instrucetions"
+        style="@style/fill_width"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10px"
+        android:layout_marginBottom="@dimen/_10px"
+        android:visibility="gone"
+        android:background="@drawable/menu_left_item_selector"
+        android:padding="@dimen/_10px">
+
+<!--        <ImageView-->
+<!--            android:layout_marginLeft="@dimen/_10px"-->
+<!--            android:layout_width="@dimen/_25px"-->
+<!--            android:layout_height="@dimen/_25px"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:src="@mipmap/course_img" />-->
+
+        <TextView
+            style="@style/wrap"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_28px"
+            android:layout_marginLeft="@dimen/_10px"
+            android:text="分享" />
+    </LinearLayout>
+
+</LinearLayout>

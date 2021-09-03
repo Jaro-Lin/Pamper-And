@@ -1,0 +1,165 @@
+apply plugin: 'com.android.application'
+
+android {
+//    useOldManifestMerger true
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        debug {
+            storeFile file('D:\\android\\project\\2020\\Pets\\pets.jks')
+            keyAlias = 'pets'
+            storePassword = 'pets111'
+            keyPassword = 'pets111'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+//        manifest.srcFile 'AndroidManifest.xml'
+//        java.srcDirs = ['src']
+//        resources.srcDirs = ['src']
+//        aidl.srcDirs = ['src']
+//        renderscript.srcDirs = ['src']
+//        res.srcDirs = ['res']
+//        assets.srcDirs = ['assets']
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.nyw.pets"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 135
+        versionName "1.35"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig = signingConfigs.debug
+        ndk { //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "fc566c25712e923ccee7203a", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+        multiDexEnabled true
+
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name
+                        .endsWith('.apk')) {
+                    def fileName = "com.nyw.pets" + "-${variant.buildType.name}-${defaultConfig.versionName}.apk"
+                    outputFileName = fileName
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig = signingConfigs.debug
+        }
+        debug {
+            signingConfig = signingConfigs.debug
+        }
+    }
+    packagingOptions {
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':refreshlayout')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    //    https://github.com/Jasonchenlijian/FastBle
+
+    //    implementation 'com.clj.fastble:FastBleLib:2.3.4'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    //okgo
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation 'com.lzy.net:okserver:2.0.5'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'org.kie.modules:com-google-code-gson:6.5.0.Final'
+
+    //    https://github.com/wendux/DSBridge-Android/blob/master/readme-chs.md
+    implementation 'com.github.wendux:DSBridge-Android:x5-3.0-SNAPSHOT'
+
+    //    https://github.com/Justson/AgentWeb
+
+    //    api 'com.just.agentweb:agentweb:4.1.2'
+
+    //    友盟
+    implementation 'com.umeng.umsdk:analytics:8.0.0'
+    implementation 'com.umeng.umsdk:common:2.0.0'
+    implementation files('libs/jcore-android-2.2.6.jar')
+    implementation files('libs/jpush-android-3.5.4.jar')
+
+    //选择器
+
+    //    implementation  'com.github.addappcn:android-pickers:2.0.0'
+
+    // 引入multidex库,已经超过65k个方法。一个dex已经装不下了，需要个多个dex，也就是multidex
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    //选择器https://github.com/Bigkoo/Android-PickerView
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //圆形图片和或序号
+    implementation project(':AvatarImageViewlibrary')
+
+    //九宫格https://github.com/littlecurl/NineGridView
+    implementation project(path: ':ninegridview')
+
+    //日历
+    implementation 'com.haibin:calendarview:3.6.7'
+
+    //模仿知乎的图片选择加载器https://github.com/zhihu/Matisse
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+
+    //高仿微信朋友圈图片展示效果 ImageWatcher  图片放大
+    implementation 'com.github.iielse:ImageWatcher:1.1.5'
+
+    //    高德地图定位
+    implementation 'com.amap.api:location:latest.integration'
+
+    // GSYVideoPlayer完整版引入  https://github.com/CarGuo/GSYVideoPlayer/blob/master/doc/USE.md
+    implementation 'com.shuyu:GSYVideoPlayer:7.1.2'
+
+    //banner  https://github.com/pinguo-zhouwei/MZBannerView
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+
+    //微信支付
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
+
+    //支付宝支付
+    implementation(name: 'alipaySdk-15.6.8-20191021122455-noUtdid', ext: 'aar')
+    //汉字转拼音
+    implementation files('libs/pinyin4j-2.5.0.jar')
+}

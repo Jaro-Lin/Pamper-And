@@ -1,0 +1,67 @@
+﻿<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">19dp</dimen>
+    <dimen name="activity_vertical_margin">19dp</dimen>
+
+    <!-- 主页面fragment底部布局 -->
+    <dimen name="personage_userinfo_mub_textsize">26.1dp</dimen>
+    <dimen name="prices_bot_layout_lr">14.2dp</dimen>
+    <dimen name="personage_username_to_pay">14.2dp</dimen>
+    <dimen name="new_xiao_r">5.9dp</dimen>
+    <dimen name="new_xiao_t">9.5dp</dimen>
+
+    <!-- 我fragment页面布局 -->
+    <dimen name="d_me_r_w">302.2dp</dimen>
+    <dimen name="d_me_b_h">213.3dp</dimen>
+    <dimen name="d_m_user_w">165.9dp</dimen>
+    <dimen name="d_m_name_txt">29.6dp</dimen>
+    <dimen name="d_m_name_top">33.2dp</dimen>
+    <dimen name="d_m_v1_top">52.1dp</dimen>
+    <dimen name="d_jg_top">39.1dp</dimen>
+    <dimen name="d_me_user_new_rh">21.3dp</dimen>
+    <dimen name="d_me_user_img_top">27.3dp</dimen>
+    <dimen name="d_me_jiange_h">65.2dp</dimen>
+    <dimen name="d_me_yyy_txt_size">21.3dp</dimen>
+    <dimen name="new_xiao_textsize">22.5dp</dimen>
+    <dimen name="d_me_padding_size">5.9dp</dimen>
+    <dimen name="d_me_userimg_r">83dp</dimen>
+    <dimen name="d_tab_layout">53.3dp</dimen>
+
+    <!-- 设置 -->
+    <dimen name="set_exit_btn_top">104.3dp</dimen>
+
+    <!-- 确认订单 -->
+    <dimen name="aff_zjjg_h">142.2dp</dimen>
+    <dimen name="aff_img_h">106.7dp</dimen>
+
+    <!-- 我的订单布局适配 -->
+
+    <dimen name="d_mybill_zjlayout_h">156.4dp</dimen>
+    <dimen name="d_mybill_viewpage_h">355.6dp</dimen>
+    <!-- 关于女伴 -->
+    <dimen name="d_aboutnaw_em_h">474.1dp</dimen>
+    <dimen name="d_aboutnaw_em_w">177.8dp</dimen>
+    
+    <!-- 登录 -->
+    <dimen name="d_login_ed">130.4dp</dimen>
+    
+    <dimen name="d_xiao_txt_size">11.9dp</dimen>
+    <dimen name="d_xioa_txt_top">1.8dp</dimen>
+    
+    <dimen name="main_t_img_layout">88.9dp</dimen>
+
+      <dimen name="main_jg_one">11.9dp</dimen>
+    <dimen name="main_t_img_top">3.6dp</dimen>
+    
+    <dimen name="main_zj_6_h">545.2dp</dimen>
+    
+    <dimen name="main_b_padding">1.2dp</dimen>
+    
+     <dimen name="fenlei_r_h">174.2dp</dimen>
+     <dimen name="gj_reshlist_h">604.4dp</dimen>
+     
+     <dimen name="calssity_r_layout_h">273.8dp</dimen>
+    
+  
+</resources>

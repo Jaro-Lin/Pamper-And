@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_index_bg"
+    tools:context=".activity.ChoiceConversationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100px"
+        android:background="#23A0F0"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30px"
+            android:src="@mipmap/return_next_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginRight="@dimen/_30px"
+            android:background="@drawable/get_input_data_gb">
+
+            <com.nyw.pets.view.ClearEditText
+                android:id="@+id/ct_inputChoiceMsg"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_30px"
+                android:layout_marginRight="@dimen/_30px"
+                android:hint="在此输入搜索的话题"
+                android:layout_height="@dimen/_80px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:layout_marginBottom="@dimen/_30px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/conversation"/>
+        <com.nyw.pets.view.ClearEditText
+            android:id="@+id/ct_input_msg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@color/write"
+            android:hint="输入话题"/>
+        <TextView
+            android:id="@+id/tv_new_info"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:textColor="@color/main_color"
+            android:text="新建话题"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_data"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10px"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

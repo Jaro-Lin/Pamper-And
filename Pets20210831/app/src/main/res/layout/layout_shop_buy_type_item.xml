@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llt_msg_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_shop_buy_btn_gb"
+        android:layout_marginTop="@dimen/_15px"
+        android:layout_marginBottom="@dimen/_15px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20px"
+        android:layout_marginRight="@dimen/_20px"
+        android:layout_marginTop="@dimen/_20px"
+        android:layout_marginBottom="@dimen/_20px"
+        android:text="规格"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

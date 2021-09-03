@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#465aa6</color>
+    <!--colorPrimaryDark是状态栏颜色-->
+    <color name="colorPrimaryDark">#23A0F0</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="write"> #FFFFFF</color>
+    <!--app主颜调-->
+    <color name="main_color">#23A0F0</color>
+    <color name="wallet_bg">#4e60a4</color>
+    <color name="recharge_bg">#ff9703</color>
+    <color name="withdrawal_btn_bg">#cccccc</color>
+    <color name="login_user_btn">#1BB723</color>
+    <color name="register_user_btn">#23A0F0</color>
+    <color name="my_index_bg">#f0edf1</color>
+
+    <color name="pleural_bg">#5ecaf3</color>
+    <color name="mask_bg">#87e0fe</color>
+    <color name="pink">#EE7AE9</color>
+    <color name="lu_main">#ccedd9</color>
+    <color name="green">#458B00</color>
+    <color name="title_bg">#3991fc</color>
+    <color name="bac">#ECECEC</color>
+    <color name="plain_bg">#fdc3f0</color>
+    <color name="gray_rounded_button">#f7f7f7</color>
+    <color name="bleData_bg">#0cb2e9</color>
+    <color name="gray1">#eeeeee</color>
+    <color name="golden">#EEC900</color>
+    <color name="mygray">#cbb8b8</color>
+    <color name="gray_vlue">#bcbcbc</color>
+    <color name="main_bac">#EEE9E9</color>
+    <color name="black2">#676767</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="possible_result">#c004ff00</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="gray">#f1f3f6</color>
+    <color name="grey">#adaca1</color>
+    <color name="gray_bg">#f0f0f0</color>
+    <color name="bright_green">#93c47d</color>
+    <color name="light_blue">#87CEEB</color>
+    <color name="plantinum">#f6c979</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="platinum_rounded">#fffcdc</color>
+    <color name="color_333">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="Dark_blue">#466ce6</color>
+    <color name="dark_grey">#cccccc</color>
+    <color name="dark_grey2">#bbbbbb</color>
+    <color name="water">#85f9e6</color>
+    <color name="white">#ffffff</color>
+    <color name="pale_red">#ffcccc</color>
+    <color name="index_bg">#fefefe</color>
+    <color name="sgin_bg">#9da7cf</color>
+    <color name="createTeamInfo">#EEEEEE</color>
+    <color name="search_bg">#eeeeee</color>
+    <color name="fefefe">#fefefe</color>
+    <color name="RGB_E6E9ED">#E6E9ED</color>
+    <color name="RGB_FFFFFF">#FFFFFF</color>
+    <color name="RGB_AAB2BD">#AAB2BD</color>
+    <color name="RGB_009900">#009900</color>
+    <color name="bg_app">#d7e6e4</color>
+    <color name="transparent_white">#4bffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="project_color">#ECF0FE</color>
+    <!--58 58 58-->
+    <color name="logistics_text">#3b3b3b</color>
+    <color name="logistics_line">#d5d5d5</color>
+    <color name="logistics_bg">#f3f3f3</color>
+    <color name="line_gray">#E0E0E0</color>
+    <color name="divider">#ffd2d2d2</color>
+    <color name="category_tab_highlight_bg">#ffd43d3d</color>
+    <color name="category_tab_text_dark">#fffafafa</color>
+    <color name="category_tab_text">#ff707070</color>
+    <color name="category_tab_highlight_text">#fffafafa</color>
+    <color name="withdrawal_bg">#f7f7f8</color>
+    <!-- 系统默认背景色 -->
+    <color name="common_background">#fcfcfc</color>
+    <!-- title背景色 -->
+    <!-- title背景色 -->
+    <color name="common_title_background">#fcfcfc</color>
+    <color name="common_status_bar_color">@color/common_title_background</color>
+    <!-- 全客户端使用的边框，分割线颜色 -->
+    <color name="common_line_color">#E2E2E2</color>
+    <color name="bill_sta_red">#ff6666</color>
+    <!-- title旁边按钮字体颜色 -->
+    <color name="common_title_menu_text">#999999</color>
+    <color name="half_transparent">#33000000</color>
+    <color name="new_deep_color">#0da75e</color>
+    <color name="shallow_write_color">#c9ddf8</color>
+    <color name="typeface_body">#c2c2c2</color>
+    <color name="pale">#fefefe</color>
+
+    <color name="bg">#f5f5f5</color>
+    <color name="txt">#cbcbcb</color>
+    <color name="btn_select_order">#aaaaaa</color>
+    <color name="txt_login">#919191</color>
+    <color name="bg_safety_remind">#f5f5f5</color>
+
+    <color name="money">#cdac6a</color>
+    <color name="intelligence_title_bg">#08c6f6</color>
+    <color name="goods_dialog_content">#cdac69</color>
+    <color name="goods_dialog">#f8ce49</color>
+
+    <color name="instantly_evaluate_content">#bababa</color>
+    <color name="instantly_evaluate_line">#ebebeb</color>
+    <color name="instantly_evaluate_line2">#bababa</color>
+    <color name="add_picture_dialog_line">#dcdcdc</color>
+    <!--243,78,141-->
+    <color name="pink_color">#f34f8e</color>
+    <!--186,186,186-->
+    <color name="grey_color">#bababa</color>
+    <color name="title_color">#586AAF </color>
+    <color name="company_text">#6172B3</color>
+    <color name="bid_detail_txt">#BDCBFE</color>
+    <color name="txt_team_color">#6979B7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="grey_900">#212121</color>
+</resources>

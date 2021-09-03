@@ -1,0 +1,48 @@
+别名是pets
+密码是pets111
+
+
+这是宠物管家安卓APP项目源码
+
+
+应用签名  e39ad924d3a13061ca7358fd2a4bc1d6
+
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: pets
+创建日期: 2020-3-25
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=pets, OU=pets, O=pets, L=pets, ST=pets, C=cn
+发布者: CN=pets, OU=pets, O=pets, L=pets, ST=pets, C=cn
+序列号: 1ec7a0a9
+有效期开始日期: Wed Mar 25 14:33:04 CST 2020, 截止日期: Sun Mar 19 14:33:04 CST 2045
+证书指纹:
+         MD5: E3:9A:D9:24:D3:A1:30:61:CA:73:58:FD:2A:4B:C1:D6
+         SHA1: 94:D4:27:8C:88:DF:5F:05:8E:2A:60:92:FC:05:C7:2E:19:2F:96:6A
+         SHA256: E9:DB:4A:66:DB:36:99:8A:A8:CD:3D:A2:FE:E5:8B:85:86:DE:49:D7:EC:23:90:79:98:BD:E5:F8:DC:3C:C9:C4
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 71 1C E4 CE FD B6 0B 4E   77 18 62 19 B9 2B F8 1F  q......Nw.b..+..
+0010: 30 DC E3 A8                                        0...
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+

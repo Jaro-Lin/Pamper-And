@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/write"
+    android:layout_marginTop="@dimen/_10px"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+    <com.nyw.pets.view.RoundImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/_100px"
+        android:layout_height="@dimen/_100px"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginBottom="@dimen/_30px"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/http_error"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginTop="@dimen/_20px"
+        android:layout_marginBottom="@dimen/_30px"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="账户001"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_10px"
+            android:text="简介，即简明扼要的介绍。是当..."/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginBottom="@dimen/_30px"
+        android:src="@mipmap/follow_img"/>
+
+    </LinearLayout>
+
+</LinearLayout>

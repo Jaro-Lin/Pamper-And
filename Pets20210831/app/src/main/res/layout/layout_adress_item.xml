@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:layout_marginTop="@dimen/_20px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginTop="@dimen/_30px"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="阿芙蓉"/>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20px"
+            android:layout_marginTop="@dimen/_30px"
+            android:textSize="12sp"
+            android:text="15777850012"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广西壮族自治区南宁市西乡塘区西乡塘街道华尔街工谷"
+            android:layout_marginLeft="@dimen/_30px"
+            android:layout_marginBottom="@dimen/_30px"
+            android:layout_marginTop="@dimen/_20px"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_60px"
+            android:layout_marginLeft="@dimen/_20px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/pen_img"/>
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_20px"
+            android:src="@mipmap/default_img"/>
+
+    </FrameLayout>
+
+</LinearLayout>
